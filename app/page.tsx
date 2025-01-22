@@ -545,7 +545,7 @@ const ToursTabs = () => {
             })}
           </p>
           <div>
-            <Link href={"/tours/tibet-may-2024"} target="_blank">
+            <Link href={"/tours/tibet-may-2025"} target="_blank">
               <TourButton
                 title={
                   translate({
