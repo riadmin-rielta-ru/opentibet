@@ -560,7 +560,7 @@ const ToursTabs = () => {
                 withBorder
               />
             </Link>
-            <Link href={"/tours/tibet-june-2024"} target="_blank">
+            <Link href={"/tours/tibet-june-2025"} target="_blank">
               <TourButton
                 title="Июнь"
                 subtitle="6—19 июня"
@@ -570,7 +570,7 @@ const ToursTabs = () => {
                 withBorder
               />
             </Link>
-            <Link href={"/tours/tibet-july-2024"} target="_blank">
+            <Link href={"/tours/tibet-july-2025"} target="_blank">
               <TourButton
                 title="Июль"
                 subtitle="2—15 июля"
@@ -580,7 +580,7 @@ const ToursTabs = () => {
                 withBorder
               />
             </Link>
-            <Link href={"/tours/tibet-august-2024"} target="_blank">
+            <Link href={"/tours/tibet-august-2025"} target="_blank">
               <TourButton
                 title="Август"
                 subtitle="2—15 августа"
@@ -590,7 +590,7 @@ const ToursTabs = () => {
                 withBorder
               />
             </Link>
-            <Link href={"/tours/tibet-september-2024"} target="_blank">
+            <Link href={"/tours/tibet-september-2025"} target="_blank">
               <TourButton
                 title="Сентябрь"
                 subtitle="2—15 сентября"
@@ -600,7 +600,7 @@ const ToursTabs = () => {
                 withBorder
               />
             </Link>
-            <Link href={"/tours/tibet-october-2024"} target="_blank">
+            <Link href={"/tours/tibet-october-2025"} target="_blank">
               <TourButton
                 title="Октябрь"
                 subtitle="2—15 октября"
