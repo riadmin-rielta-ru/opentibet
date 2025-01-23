@@ -1376,8 +1376,8 @@ export const PreparingForTrip = () => {
         </div>
 
         <div className="w-full h-[315px] mt-5 mb-2 md:h-96">
-          <br /><br />
-          Тренировка
+        <br />
+          Тренировка<br />
           <iframe
             width="100%"
             // height="315"
@@ -1388,6 +1388,8 @@ export const PreparingForTrip = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
           />
+          <br />
+          <br />
         </div>        
       </div>
       <div>
