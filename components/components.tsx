@@ -1243,13 +1243,13 @@ export const GuruTibetBanner: React.FC = () => {
       <div className="absolute h-full w-full z-10">
         <div className="flex flex-col justify-between h-full">
           <div className="text-2xl md:text-4xl font-semibold p-4 cursor-default">
-            
+
           </div>
           <div className="text-lg md:text-2xl text-gray-200 cursor-default px-4 pt-20">
             Авторские туры по Тибету вместе с Алексеем Перчуковым
           </div>
           <div className="text-gray-200 text-sm md:text-sm cursor-default px-4 pt-8">
-          Первое знакомcтво с Тибетом, все самое лучшее в Тибете,  истоки четырех священных рек, исследование мандалы Кайласа
+            Первое знакомcтво с Тибетом, все самое лучшее в Тибете,  истоки четырех священных рек, исследование мандалы Кайласа
           </div>
           <div className="p-4">
             <Link href="https://gurutibet.com" target="_blank">
@@ -1303,9 +1303,9 @@ export const Footer = () => {
           </div>
 
         </div>
-      
+
       </div>
-      <Copyright />          
+      <Copyright />
 
     </div>
   )
@@ -1375,7 +1375,7 @@ export const PreparingForTrip = () => {
           />
         </div>
 
-     
+
       </div>
       <div>
         <ButtonWithContent
@@ -1837,20 +1837,23 @@ export const PreparingForTrip = () => {
             }) as string
           }
         >
-          <div className="p-4 leading-8">
+          <div className="p-4">
+            <div className="w-full h-[315px] mt-5 mb-2 md:h-96">
 
-          <iframe
-            width="100%"
-            // height="315"
-            height="100%"
-            src="https://www.youtube.com/embed/VvDKIhqbX58?si=-fkefqK4JDBLXyR8"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          />
-  
-          </div>
+
+              <iframe
+                width="100%"
+                // height="315"
+                height="100%"
+                src="https://www.youtube.com/embed/VvDKIhqbX58?si=-fkefqK4JDBLXyR8"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+
+            </div>      </div>
+
         </ButtonWithContent>
 
       </div>
