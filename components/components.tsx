@@ -1375,22 +1375,7 @@ export const PreparingForTrip = () => {
           />
         </div>
 
-        <div className="w-full h-[315px] mt-5 mb-2 md:h-96">
-        <br />
-          Тренировка<br />
-          <iframe
-            width="100%"
-            // height="315"
-            height="100%"
-            src="https://www.youtube.com/embed/VvDKIhqbX58?si=-fkefqK4JDBLXyR8"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          />
-          <br />
-          <br />
-        </div>        
+     
       </div>
       <div>
         <ButtonWithContent
@@ -1842,6 +1827,32 @@ export const PreparingForTrip = () => {
             </p>
           </div>
         </ButtonWithContent>
+
+
+        <ButtonWithContent
+          title={
+            translate({
+              ru: "Тренировка ",
+              en: "Training",
+            }) as string
+          }
+        >
+          <div className="p-4 leading-8">
+
+          <iframe
+            width="100%"
+            // height="315"
+            height="100%"
+            src="https://www.youtube.com/embed/VvDKIhqbX58?si=-fkefqK4JDBLXyR8"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          />
+  
+          </div>
+        </ButtonWithContent>
+
       </div>
     </div>
   )
