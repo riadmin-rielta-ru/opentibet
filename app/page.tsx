@@ -653,6 +653,19 @@ const ToursTabs = () => {
                 withBorder
               />
             </Link>
+            <Link href={"/tours/2025/june-2"} target="_blank">
+              <TourButton
+                title="Июнь"
+                subtitle="7 июня - 27 июня"
+                days={21}
+                price={"от 3300"}
+                bgColor="yellow-500"
+                fgColor="black"
+                accentColor="white"
+                withIcon
+                withBorder
+              />
+            </Link>
             <Link href={"/tours/2025/september"} target="_blank">
               <TourButton
                 title="Сентябрь"
