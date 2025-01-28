@@ -1856,6 +1856,37 @@ export const PreparingForTrip = () => {
 
         </ButtonWithContent>
 
+
+        <ButtonWithContent
+          title={
+            translate({
+              ru: "Подготовка к Кайлас-Коре. Секреты выносливости  ",
+              en: "Preparation for Kailash Kora. Secrets of Endurance
+",
+            }) as string
+          }
+        >
+          <div className="p-4">
+            <div className="w-full h-[315px] mt-5 mb-2 md:h-96">
+
+
+              <iframe
+                width="100%"
+                // height="315"
+                height="100%"
+                src="https://www.youtube.com/embed/kF6n3lWBstM?si=VML_yD9o8yJoAxF8"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+
+            </div>      </div>
+
+        </ButtonWithContent>
+
+
+
       </div>
     </div>
   )
