@@ -1861,8 +1861,7 @@ export const PreparingForTrip = () => {
           title={
             translate({
               ru: "Подготовка к Кайлас-Коре. Секреты выносливости  ",
-              en: "Preparation for Kailash Kora. Secrets of Endurance
-",
+              en: "Preparation for Kailash Kora. Secrets of Endurance",
             }) as string
           }
         >
