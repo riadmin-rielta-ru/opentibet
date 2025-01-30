@@ -123,13 +123,13 @@ const TourBasicTimetable = ({ accentColor = "blue-500" }) => {
                     ru: <>
                         Прилетаем в Лхасу, встречаемся с нашим радушным гидом и отправляемся в отель.
                         <br /><br />Дорога занимает примерно час, по пути наслаждаемся прекрасными видами и привыкаем к высокогорью - Лхаса расположена на высоте 3600 м.
-                        <br /><br />Ночь в Лхасе Banakshi hotel
+                        <br /><br />Ночь в Лхасе
                     </>,
                     en: <>
                         Chengdu-Lhasa Flight. 08:15 – 14:00 Gonkar airport (3550 m). Transfer to Lhasa (3600 m).
                         <br />
                         <br />
-                        Overnight in Lhasa, Banakshi hotel.
+                        Overnight in Lhasa.
 
                     </>
                 })}
@@ -145,7 +145,7 @@ const TourBasicTimetable = ({ accentColor = "blue-500" }) => {
 
                         <br /><br />После отправляемся в храм Джоканг, самый почитаемы храм в Тибете, и район Баркор, где ждут нас множество сувенирных лавок, кафе, и просто колоритных атмосферных мест
 
-                        <br /><br />Ночь в Лхасе, Banakshi hotel.
+                        <br /><br />Ночь в Лхасе.
 
                     </>,
 
@@ -168,7 +168,7 @@ const TourBasicTimetable = ({ accentColor = "blue-500" }) => {
                         <br />
                         <br />
 
-                        Overnight in Lhasa, Banakshi hotel.
+                        Overnight in Lhasa.
 
                     </>
                 })}
@@ -182,7 +182,7 @@ const TourBasicTimetable = ({ accentColor = "blue-500" }) => {
 
                         <br /><br />Наша акклиматизация продолжается, монастыри находятся чуть выше Лхасы, на 4400, и этот день принесет нам не только богатую культурную программу ( и Сера, и Дрепунг входили в тройку государственных великих монастырей), но и даст хороший тренировку телу для адаптации.
 
-                        <br /><br />Ночь в Лхасе в Banakshi hotel
+                        <br /><br />Ночь в Лхасе
                     </>,
                     en: <>
                         Visiting Sera (4300 m) and Drepung (4400 m) monasteries.
@@ -197,7 +197,7 @@ const TourBasicTimetable = ({ accentColor = "blue-500" }) => {
                         <br />
                         <br />
                         <TimetablePhoto src={imagesSrc.drepung} title="Drepung" />
-                        Overnight in Lhasa at Banakshi hotel.
+                        Overnight in Lhasa.
                     </>
                 })}
 
@@ -211,7 +211,7 @@ const TourBasicTimetable = ({ accentColor = "blue-500" }) => {
 
                         <br /> <br />Этот монастырь один из немногих, переживших Культурную революцию. Побродим по мощеным улочкам обители, услышим древние колокола, сделаем фото "мертвых и вечноживых" деревьев, растущих на площадях. Прикоснемся к обычаям школы Гелуг.
 
-                        <br /> <br />Ночь в Шигадзе, в Wan rui отель.
+                        <br /> <br />Ночь в Шигадзе.
                     </>,
 
                     en: <>
@@ -228,7 +228,7 @@ const TourBasicTimetable = ({ accentColor = "blue-500" }) => {
                         <br />
                         <br />
                         <TimetablePhoto src={imagesSrc.tashilhunpo} />
-                        Overnight in Shigadze, at Wan rui hotel.
+                        Overnight in Shigadze.
 
                     </>
                 })}
@@ -240,7 +240,7 @@ const TourBasicTimetable = ({ accentColor = "blue-500" }) => {
                         Проводим день в дороге, постепенно приближаясь к священному Кайласу. Сегодня едем мимо Саги, граничащей с Непалом до Парьянга,
                         расположившегося на высоте 4610. Едем долго, 12 часов, наслаждаемся изумительной природой за окнами автобуса.
 
-                        <br /><br />Ночь в Paryang Hotel
+                        <br /><br />Ночь
 
                     </>,
 
@@ -258,7 +258,7 @@ const TourBasicTimetable = ({ accentColor = "blue-500" }) => {
                         <br />
                         <br />
 
-                        Overnight at Paryang Hotel.
+                        Overnight.
                     </>
                 })}
             </TimetableDay>
@@ -277,7 +277,7 @@ const TourBasicTimetable = ({ accentColor = "blue-500" }) => {
 
                         <br /><br />Монастырь Госсул построен чуть правее пещеры, в которой великий Атиш́а проходил семидневную медитацию. Тонкое по своим вибрациям и красоте место.
 
-                        <br /><br />Ночь в Пуранге. Отель Holiday
+                        <br /><br />Ночь в Пуранге.
                     </>,
                     en: <>
 
@@ -297,7 +297,7 @@ const TourBasicTimetable = ({ accentColor = "blue-500" }) => {
                         <br />
                         <br />
                         <TimetablePhoto src={imagesSrc.chiu} />
-                        Overnight in Purang. Holiday Hotel.
+                        Overnight in Purang.
                     </>
                 })}
 
@@ -313,7 +313,7 @@ const TourBasicTimetable = ({ accentColor = "blue-500" }) => {
 
                         <br /><br />Нас ждут легенды о древнем озере, ночь предвкушения перед встречей с Кайласом -волнительный и важный день.
 
-                        <br /><br />Ночь в Дарчене. New Castle hotel.
+                        <br /><br />Ночь в Дарчене.
 
                     </>,
                     en: <>
@@ -332,7 +332,7 @@ const TourBasicTimetable = ({ accentColor = "blue-500" }) => {
                         Darchen - The name of the town (Darchen) in this case is translated as "big flag". Once, on the wall of the local monastery, which was destroyed during the Cultural Revolution, a huge thangka with an image of Buddha was hung. After the collapse of the unified Tibetan state in the middle of the IX century, the rulers of western Tibet (Ngari) seized the historical region of Ladakh (Ladakh; today it is part of the Indian state of Jammu and Kashmir) located to the south and founded the Ladakh kingdom. In the 12th century, the Ladakh kings gave the territory (on which Darchhen is located) to the Bhutanese lama Drukchen Ngawang Namgyal. From this time, monasteries on the Kailas-Kora route began to be built.
                         <br />
                         <br />
-                        Overnight in Dharchhen. New Castle hotel.
+                        Overnight in Dharchhen.
                     </>
                 })}
 
@@ -358,7 +358,7 @@ const TourBasicTimetable = ({ accentColor = "blue-500" }) => {
                         Монастырь Дрира Пхуг (Drira Phug), основан в 1213 г. Мастером Гоцангпа. Принадлежит линии Дрикунг школы Кагью. С ним и окружающими его горами связано огромное количество легенд. После длительной  медитации в пещере, на месте которой построен монастырь, Мастер произнес: «Каждый, кто обопрётся головой в этой пещере, будь то существо в драгоценном человеческом обличье, будь то существо из трёх видов живых существ: птиц, грызунов или насекомых, – каждый избежит перерождения в нижних мирах, даже если он попадёт сюда случайно». Говоря это, он оставил вмятину своей головой в скале.
                         <br />
                         <br />
-                        Ночь в New Guest Norh Face. (4950м)
+                        Ночь. (4950м)
                     </>,
                     en: <>
 
@@ -379,7 +379,7 @@ const TourBasicTimetable = ({ accentColor = "blue-500" }) => {
                         <br />
                         <br />
 
-                        Overnight at New Guest Norh Face (4950 m).
+                        Overnight (4950 m).
 
 
                     </>
@@ -404,7 +404,7 @@ const TourBasicTimetable = ({ accentColor = "blue-500" }) => {
                         <br />
                         Монастырь Зутрул Пхук (в переводе означает ‘Пещера чудес’) выстроен вокруг пещеры, которая стала
                         местом знаменитой победы Миларепы над мастером бона Наро Бончунгом.
-                        Ночь у монастыря Зутур Пхук. New Guesthouse. (4700м)
+                        Ночь у монастыря Зутур Пхук. (4700м)
                     </>,
                     en: <>
                         Kora - day two.
@@ -420,7 +420,7 @@ const TourBasicTimetable = ({ accentColor = "blue-500" }) => {
                         <br />
                         <br />
 
-                        Zutrul Phuk Monastery (meaning 'Cave of Wonders') is built around the cave that was the site of Milarepa's famous victory over the Bon master Naro Bonchung. Overnight at Zutur Phuk Monastery, New Guesthouse (4700 м).
+                        Zutrul Phuk Monastery (meaning 'Cave of Wonders') is built around the cave that was the site of Milarepa's famous victory over the Bon master Naro Bonchung. Overnight at Zutur Phuk Monastery(4700 м).
 
                     </>
                 })}
@@ -441,7 +441,7 @@ const TourBasicTimetable = ({ accentColor = "blue-500" }) => {
                         Серлунг Гомпа – самая маленькая из пяти обителей вокруг Кайласа; её строения расположены в виде прямоугольника. После полной реконструкции 2012 г. во внутреннем дворе справа – главный храм со статуей Падмасамбхавы. Рядом с монастырём находится большая белая ступа Джангчуб; такая же украшает противоположный берег одноимённой реки. В Серлунг Гомпа всего два монаха.
                         <br />
                         <br />
-                        Ночь в Дарчене. New Castle hotel.
+                        Ночь в Дарчене.
                     </>,
 
                     en: <>
@@ -458,7 +458,7 @@ const TourBasicTimetable = ({ accentColor = "blue-500" }) => {
                         <br />
                         <br />
 
-                        Overnight in Darchen, New Castle hotel.
+                        Overnight in Darchen.
 
                     </>
                 })}
@@ -504,7 +504,7 @@ const TourBasicTimetable = ({ accentColor = "blue-500" }) => {
                         <br /><br />В монастыре увидим знаменитую ступу Кумбум со 108 внутренними залами и алтарями на четырёх этажах.
 
                         <br /><br />Озеро Ямдрок- "бирюзовое озеро Тибета", по форме напоминающее осьминога. На одном из 9 островов воздвигнут монастырь, главной реликвией которого является камень со следом ноги Падмасамбхавы. легенды не отпускают нас, сопровождая до самого возвращения в столицу.
-                        <br /><br />Ночь в Лхасе Banakshi hotel
+                        <br /><br />Ночь в Лхасе
                     </>,
                     en: <>
                         Travel Lhasa - Gyantse - Lhasa
@@ -524,7 +524,7 @@ const TourBasicTimetable = ({ accentColor = "blue-500" }) => {
 
                         Yamdrok Lake is one of the sacred lakes in Tibet. Located at an altitude of 4,408 meters, the name Yamdrok means "turquoise lake of Tibet". Yamdrok-(Yum)tso resembles an octopus in shape; its head is the northern part of the lake. A monastery has been erected on one of the 9 islands, the main relic of which is a stone with the footprint of Padmasambhava's feet.
 
-                        Overnight in Lhasa at Banakshi hotel.
+                        Overnight in Lhasa.
 
                     </>
                 })}
@@ -538,13 +538,13 @@ const TourBasicTimetable = ({ accentColor = "blue-500" }) => {
                         Свободное время в Лхасе. Высыпаемся, гуляем, покупаем сувениры. Хорошо попробовать и купить китайский и тибетский чай, поющие чаши, изделия из меха и недорогую аутентичную бижутерию.
                         <br />
                         <br />
-                        Ночь в Лхасе Banakshi hotel
+                        Ночь в Лхасе
                     </>,
                     en: <>
                         Free day in Lhasa.
                         <br />
 
-                        Overnight in Lhasa Banakshi hotel
+                        Overnight in Lhasa
                     </>
                 })}
             </TimetableDay>
