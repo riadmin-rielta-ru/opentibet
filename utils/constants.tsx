@@ -14,12 +14,12 @@ export const LINK_WHATSAPP = 'https://wa.me/79119274114'
 export type Month = 'may' | 'june' | 'july' | 'august' | 'september' | 'october'
 export const getTourPriceForMonth = (month: Month): number => {
     const prices: Record<Month, number> = {
-        may: 1900,
-        june: 2000,
-        july: 2100,
-        august: 2000,
-        september: 2300,
-        october: 1900,
+        may: 2000,
+        june: 2100,
+        july: 2200,
+        august: 2100,
+        september: 2400,
+        october: 2000,
     }
     return prices[month] || 0
 }

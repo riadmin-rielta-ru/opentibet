@@ -125,14 +125,14 @@ function Home() {
                   <>
                     Маршруты по доступным ценам
                     <br />
-                    Пакетные туры от 1900 $
+                    Пакетные туры от 2000 $
                   </>
                 ),
                 en: (
                   <>
                     Routes at affordable prices
                     <br />
-                    Package tours from $1900
+                    Package tours from $2000
                   </>
                 ),
               })}
@@ -540,8 +540,8 @@ const ToursTabs = () => {
           </h4>
           <p className="font-semibold mx-3 mb-3 text-blue-500">
             {translate({
-              ru: "Всё, что нужно паломнику. От 1900$",
-              en: "Everything a pilgrim needs. From $1900",
+              ru: "Всё, что нужно паломнику. От 2000$",
+              en: "Everything a pilgrim needs. From $2000",
             })}
           </p>
           <div>
@@ -585,7 +585,7 @@ const ToursTabs = () => {
                 title="Август"
                 subtitle="2—15 августа"
                 days={14}
-                price={"2200 (от 6 человек)"}
+                price={"2300 (от 6 человек)"}
                 withIcon
                 withBorder
               />
