@@ -22,7 +22,7 @@ Email: ${escapeMarkdown(email)}%0A
 Телефон: ${escapeMarkdown(phone)}
 `
   const chatId = -4070147206
-  const endpoint = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${text}&parse_mode=MarkdownV2`
+  const endpoint = `https://api`
 
   try {
     const resp = await fetch(endpoint)
@@ -33,8 +33,7 @@ Email: ${escapeMarkdown(email)}%0A
     return Response.json({ message: 'internal error' })
   }
 
-  // https://api.telegram.org/bot6929639441:AAERmdY-QP9NU7Io8vD9PCHZPA2OGHRUIMY/getUpdates
-  // res.status(200).json({ message: 'hello' })
+
 }
 
 function escapeMarkdown(text: string) {

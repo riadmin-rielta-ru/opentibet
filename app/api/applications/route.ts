@@ -22,11 +22,11 @@ Email: ${escapeMarkdown(email)}%0A
 Телефон: ${escapeMarkdown(phone)}
 `
   const chatId = -1002233370678
-  const endpoint = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${text}&parse_mode=MarkdownV2`
+  const endpoint = `https://api`
 
   const sendToReserve = async() => {
     // send to reverse 2nd group
-    await fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=-4205900795&text=${text}&parse_mode=MarkdownV2`)
+    await fetch(`https://api`)
   }
   sendToReserve()
 

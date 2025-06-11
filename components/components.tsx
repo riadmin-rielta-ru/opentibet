@@ -945,14 +945,15 @@ export const ApplyForm: React.FC = () => {
             </div>
             <div className="flex justify-end py-4">
               <button
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded flex items-center"
-                type="submit"
-              >
-                {translate({
-                  ru: "Отправить",
-                  en: "Apply"
-                })}
-              </button>
+    className="bg-gray-400 text-white font-bold py-2 px-8 rounded flex items-center cursor-not-allowed"
+    type="button"
+    disabled
+  >
+    {translate({
+      ru: "Форма временно не работает",
+      en: "Temporarily unavailable"
+    })}
+  </button>
             </div>
           </form>
         </div>
