@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import tibetCss from "./tibet.module.css";
+import { CookieBanner } from "../components/components"; // путь зависит от структуры
 
 import {
   Arrow,
@@ -331,7 +332,7 @@ function Home() {
 
         </div>
       </div>
-
+ <CookieBanner /> 
       <Footer />
     </main>
   );
