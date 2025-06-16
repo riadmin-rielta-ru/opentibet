@@ -2271,3 +2271,37 @@ export const WhatsAppIcon: React.FC<{
     </svg>
   )
 }
+
+import { useEffect, useState } from "react";
+
+export const CookieBanner: React.FC = () => {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const accepted = localStorage.getItem("cookieAccepted");
+    if (!accepted) {
+      setVisible(true);
+    }
+  }, []);
+
+  const handleAccept = () => {
+    localStorage.setItem("cookieAccepted", "true");
+    setVisible(false);
+  };
+
+  if (!visible) return null;
+
+  return (
+    <div className="fixed bottom-0 w-full bg-black text-white p-4 z-50 flex flex-col md:flex-row items-center justify-between">
+      <span className="text-sm mb-2 md:mb-0">
+        Мы используем cookie-файлы, чтобы сделать сайт удобнее для вас.
+      </span>
+      <button
+        onClick={handleAccept}
+        className="bg-white text-black px-4 py-2 rounded hover:bg-gray-200 transition"
+      >
+        Принять
+      </button>
+    </div>
+  );
+};
