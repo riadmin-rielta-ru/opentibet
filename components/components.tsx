@@ -2272,8 +2272,6 @@ export const WhatsAppIcon: React.FC<{
   )
 }
 
-import { useEffect, useState } from "react";
-
 
 export const CookieBanner: React.FC = () => {
   const [visible, setVisible] = useState(false);
@@ -2292,22 +2290,24 @@ export const CookieBanner: React.FC = () => {
   if (!visible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 bg-black text-white text-sm px-4 py-3 flex flex-col md:flex-row justify-between items-center shadow-xl">
-      <span className="mb-2 md:mb-0">
-        {translate({
-          ru: "Мы используем cookie-файлы для улучшения работы сайта.",
-          en: "We use cookies to improve your browsing experience.",
-        })}
-      </span>
-      <button
-        onClick={handleAccept}
-        className="bg-white text-black px-4 py-1 rounded hover:bg-gray-200 transition"
-      >
-        {translate({
-          ru: "Принять",
-          en: "Accept",
-        })}
-      </button>
+    <div className="fixed bottom-0 left-0 right-0 z-50 bg-black text-white px-4 py-4 shadow-xl flex justify-center">
+      <div className="flex flex-col md:flex-row items-center gap-4 text-center">
+        <span className="text-sm">
+          {translate({
+            ru: "Мы используем cookie-файлы для улучшения работы сайта.",
+            en: "We use cookies to improve your browsing experience.",
+          })}
+        </span>
+        <button
+          onClick={handleAccept}
+          className="bg-white text-black px-5 py-2 rounded hover:bg-gray-200 transition"
+        >
+          {translate({
+            ru: "Принять",
+            en: "Accept",
+          })}
+        </button>
+      </div>
     </div>
   );
 };
