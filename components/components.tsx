@@ -844,7 +844,6 @@ export const ApplyForm: React.FC = () => {
             </div>
           
         </div>
-      </div>
     </div>
   );
 };
