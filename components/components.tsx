@@ -830,118 +830,14 @@ export const ApplyForm: React.FC = () => {
               en: "Application for participation"
             }) as string}
             subtitle={translate({
-              ru: "Заполните заявку, и мы свяжемся с вами в ближайшее время",
-              en: "Fill out the application and we will contact you shortly",
+              ru: "Отправьте нам заявку на почту office@gurutibet.com, и мы свяжемся с вами в ближайшее время",
+              en: "Send us a request by email office@gurutibet.com and we will contact you shortly",
             }) as string}
           />
         </div>
         <div className="w-full md:max-w-[50%] p-4">
-          <form
-            onSubmit={async (event) => {
-              event.preventDefault();
-              try {
-                const body = {
-                  name: name,
-                  email: email,
-                  phone: phone,
-                };
-                const resp = await fetch("/api/applications", {
-                  method: "POST",
-                  body: JSON.stringify(body),
-                  headers: {
-                    "content-type": "application/json",
-                  },
-                });
-                alert(
-                  translate({
-                    ru: `Спасибо за заявку, ${name}! Мы свяжемся с вами в ближайшее время`,
-                    en: `Thanks for your submission, ${name}! We will contact you shortly`
-                  })
-                );
-                setName("");
-                setEmail("");
-                setPhone("");
-                console.log(resp);
-                const json = await resp.json();
-                console.log(json);
-                if (window && (window as any).ym !== undefined) {
-                  (window as any).ym('95954530', 'reachGoal', 'FORM_SUBMIT')
-                }
-              } catch (error) {
-                alert(
-                  translate({
-                    ru: `${name}, не удалось отправить заявку! Пожалуйста, попробуйте ещё раз или напишите нам на почту info@opentibet.ru`,
-                    en: `${name}, failed to submit request! Please try again or write to us at info@opentibet.ru`
-                  })
-                );
-              }
-            }}
-          >
-            <div className="py-[8px]">
-              <label
-                htmlFor="first_name"
-                className="block mb-1 text-[10px] uppercase tracking-wider font-semibold text-gray-900"
-              >
-                {translate({
-                  ru: "Имя",
-                  en: "Your Name"
-                })}
-              </label>
-              <input
-                type="text"
-                id="first_name"
-                className="bg-gray-100 border border-gray-100 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 px-1.5 outline-none"
-                placeholder=""
-                required
-                value={name}
-                onChange={(event) => {
-                  setName(event.target.value);
-                }}
-              />
-            </div>
-            <div className="py-[8px]">
-              <label
-                htmlFor="email"
-                className="block mb-1 text-[10px] uppercase tracking-wider font-semibold text-gray-900"
-              >
-                {translate({
-                  ru: "Эл. почта",
-                  en: "EMAIL"
-                })}
-              </label>
-              <input
-                type="email"
-                id="email"
-                className="bg-gray-100 border border-gray-100 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 px-1.5 outline-none"
-                placeholder="example@gmail.com"
-                required
-                value={email}
-                onChange={(event) => {
-                  setEmail(event.target.value);
-                }}
-              />
-            </div>
-            <div className="py-[8px]">
-              <label
-                htmlFor="tel"
-                className="block mb-1 text-[10px] uppercase tracking-wider font-semibold text-gray-900"
-              >
-                {translate({
-                  ru: "Или номер телефона",
-                  en: "OR PHONE NUMBER"
-                })}
-              </label>
-              <input
-                type="tel"
-                id="email"
-                className="bg-gray-100 border border-gray-100 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 px-1.5 outline-none"
-                placeholder="+7 (999) 123 45 67"
-                required
-                value={phone}
-                onChange={(event) => {
-                  setPhone(event.target.value);
-                }}
-              />
+          По любым вопросам пишите нам на почту: <a href="mailto:office@gurutibet.com">office@gurutibet.com</a>
+
             </div>
             <div className="flex justify-end py-4">
               <button
