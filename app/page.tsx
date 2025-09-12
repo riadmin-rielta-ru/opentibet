@@ -466,8 +466,8 @@ const ToursTabs = () => {
         <Header
           title={
             translate({
-              ru: "Программы на 2025",
-              en: "Programs for 2025",
+              ru: "Программы",
+              en: "Programs",
             }) as string
           }
           subtitle=""

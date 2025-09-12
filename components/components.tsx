@@ -2074,7 +2074,7 @@ const Copyright: React.FC = () => {
 
   return (
     <div className="text-center text-xs text-gray-500 py-4">
-      &copy; {currentYear}, OPEN TIBET © {translate({
+       OPEN TIBET © {translate({
         ru: 'Все права защищены',
         en: 'All rights reserved'
       })}
