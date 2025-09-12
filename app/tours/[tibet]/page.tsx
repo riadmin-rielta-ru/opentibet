@@ -60,7 +60,7 @@ export default function ({ params }: { params: { tibet: string } }) {
                     <div className="text-white h-full flex flex-col justify-center items-center px-4 md:px-20 py-10 md:py-40 relative z-100">
                         <div className="max-w-5xl w-full">
                             <div className="text-3xl font-semibold text-center w-full px-4 mt-5 mb-5">
-                                Программа на {translationsMap[month]} 2025 года
+                                Программа на {translationsMap[month]}
                             </div>
                             <div className="text-xl font-light w-9/12 mx-auto text-center leading-7">
                                 Мы знаем и любим Тибет. Мы хотим, чтобы как можно больше людей
