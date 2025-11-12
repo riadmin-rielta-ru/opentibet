@@ -162,7 +162,7 @@ const AbousUs = () => {
                     <li className="flex items-center my-2">
                         <div className="w-24 mr-3 flex-grow-0 flex-shrink-0">
                             <Image
-                                src="/logo-tibet-vista.jpg"
+                                src="/logo-tibet-vista.png"
                                 alt="Tibet Vista Travel Agency"
                                 height={100}
                                 width={100}
@@ -172,8 +172,8 @@ const AbousUs = () => {
                         <div className="leading-5">
                             <span className="font-semibold">
                                 {translate({
-                                    ru: "Турагентство Tibet Vista. Тибет, Лхаса",
-                                    en: "Tibet Vista Travel Agency. Tibet, Lhasa",
+                                    ru: "Турагентство Tibet Vista",
+                                    en: "Tibet Vista Travel Agency",
                                 })}
                             </span>
                             <br />
