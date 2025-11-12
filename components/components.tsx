@@ -1181,8 +1181,8 @@ export const Footer = () => {
           </div>
           <div className="w-[33%] h-[40px] flex items-center justify-center">
             <Image
-              src="/tashidelek.png"
-              alt="Tashi Delek Travel Agency"
+              src="/logo-tibet-vista.png"
+              alt="Tibet Vista Travel Agency"
               height={100}
               width={100}
               className="object-contain w-28 h-16 brightness-0 saturate-0 "
