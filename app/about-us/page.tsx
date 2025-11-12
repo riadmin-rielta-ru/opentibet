@@ -162,8 +162,8 @@ const AbousUs = () => {
                     <li className="flex items-center my-2">
                         <div className="w-24 mr-3 flex-grow-0 flex-shrink-0">
                             <Image
-                                src="/tashidelek.png"
-                                alt="Tashi Delek Travel Agency"
+                                src="/logo-tibet-vista.jpg"
+                                alt="Tibet Vista Travel Agency"
                                 height={100}
                                 width={100}
                                 className="object-contain w-28 h-16 brightness-75 -hue-rotate-15  cursor-pointer"
@@ -172,8 +172,8 @@ const AbousUs = () => {
                         <div className="leading-5">
                             <span className="font-semibold">
                                 {translate({
-                                    ru: "Турагентство Tashi Delek",
-                                    en: "Tashi Delek Travel Agency",
+                                    ru: "Турагентство Tibet Vista. Тибет, Лхаса",
+                                    en: "Tibet Vista Travel Agency. Tibet, Lhasa",
                                 })}
                             </span>
                             <br />
