@@ -1185,7 +1185,9 @@ export const Footer = () => {
               alt="Tibet Vista Travel Agency"
               height={100}
               width={100}
-              className="object-contain w-28 h-16 brightness-0 saturate-0 "
+              placeholder="empty"
+              style={{ filter: "grayscale(100%)" }}
+              className="object-contain w-28 h-16"
             />
           </div>
 
