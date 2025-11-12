@@ -162,7 +162,7 @@ const AbousUs = () => {
                     <li className="flex items-center my-2">
                         <div className="w-24 mr-3 flex-grow-0 flex-shrink-0">
                             <Image
-                                src="/logo-tibet-vista.png"
+                                src="/logo-tibet-vista.jpg"
                                 alt="Tibet Vista Travel Agency"
                                 height={100}
                                 width={100}
