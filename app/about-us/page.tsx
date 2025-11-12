@@ -166,7 +166,7 @@ const AbousUs = () => {
                                 alt="Tibet Vista Travel Agency"
                                 height={100}
                                 width={100}
-                                className="object-contain w-28 h-16 brightness-75 -hue-rotate-15  cursor-pointer"
+                                className="object-contain w-28 h-16 brightness-75 -hue-rotate-15  cursor-pointer bg-white"
                             />
                         </div>
                         <div className="leading-5">
