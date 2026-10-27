@@ -1,0 +1,23 @@
+server {
+    listen 80;
+    server_name opentibet.ru www.opentibet.ru;
+
+    # содержимое папки out/ после npm run build
+    root /var/www/opentibet;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    # файлы сборки с хешем в имени, можно кэшировать надолго
+    location /_next/static/ {
+        expires 1y;
+        add_header Cache-Control "public, immutable";
+    }
+
+    error_page 404 /404.html;
+
+    gzip on;
+    gzip_types text/plain text/css application/javascript application/json image/svg+xml;
+}

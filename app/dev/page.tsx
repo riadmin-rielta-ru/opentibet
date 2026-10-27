@@ -1,4 +1,4 @@
-import { BuyBookButtonStory, GuruTibetBannerStory, NavbarHamburgerStory } from '@/components/components'
+import { BuyBookButtonContainer, GuruTibetBannerStory, NavbarHamburgerStory } from '@/components/components'
 import React from 'react'
 
 export default function () {
@@ -6,7 +6,7 @@ export default function () {
         <div>
             <h1>Dev Page</h1>
 
-            <BuyBookButtonStory />
+            <BuyBookButtonContainer />
             <div className='p-10 bg-slate-300'>
                 <NavbarHamburgerStory />
             </div>

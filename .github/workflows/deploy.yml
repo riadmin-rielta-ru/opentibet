@@ -1,0 +1,44 @@
+# сборка статического сайта и выкладка папки out/ на сервер по FTP
+#
+# настройки в окружении sweb: Settings → Environments → sweb
+#   secrets:   FTP_USERNAME, FTP_PASSWORD
+#   variables: FTP_SERVER (77.222.40.4), FTP_PORT (21),
+#              FTP_SERVER_DIR — необязательно, папка сайта на сервере (по умолчанию ./)
+
+name: Build and deploy
+
+on:
+  workflow_dispatch:
+
+# не запускать две выкладки одновременно
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: sweb
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run build
+
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ vars.FTP_SERVER }}
+          port: ${{ vars.FTP_PORT }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftp
+          local-dir: ./out/
+          server-dir: ${{ vars.FTP_SERVER_DIR || './' }}
