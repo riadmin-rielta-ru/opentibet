@@ -32,6 +32,15 @@ jobs:
 
       - run: npm run build
 
+      # FTP-Deploy-Action требует, чтобы папка заканчивалась на /
+      - name: Prepare server dir
+        id: dir
+        env:
+          FTP_SERVER_DIR: ${{ vars.FTP_SERVER_DIR }}
+        run: |
+          dir="${FTP_SERVER_DIR:-./}"
+          echo "path=${dir%/}/" >> "$GITHUB_OUTPUT"
+
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
@@ -41,4 +50,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftp
           local-dir: ./out/
-          server-dir: ${{ vars.FTP_SERVER_DIR || './' }}
+          server-dir: ${{ steps.dir.outputs.path }}
